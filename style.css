@@ -1,0 +1,96 @@
+/* Importa a fonte 'Poppins' do Google Fonts com diferentes pesos (400, 500, 600) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Configurações gerais de estilo para todo o documento */
+* {
+    margin: 0; /* Zera as margens */
+    padding: 0; /* Zera os preenchimentos */
+    box-sizing: border-box; /* Faz com que a caixa de modelagem inclua as bordas no tamanho total */
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão para todo o documento */
+}
+
+/* Estilos para o corpo do documento */
+body {
+    height: 100vh; /* Define a altura do corpo como 100% da altura da viewport */
+    display: flex; /* Ativa o modelo de layout flexível */
+    align-items: center; /* Alinha os itens ao centro no eixo transversal (vertical) */
+    justify-content: center; /* Alinha os itens ao centro no eixo principal (horizontal) */
+    flex-direction: column; /* Organiza os itens em coluna ao longo do eixo principal */
+    gap: 5px; /* Define o espaçamento entre os elementos filhos do corpo */
+    background: linear-gradient(90deg, rgba(90,30,159,1) 0%, rgba(77,39,182,1) 100%); /* Define um gradiente linear como plano de fundo */
+}
+
+/* Estilos para os cabeçalhos h2 dentro do corpo */
+body h2 {
+    color: white; /* Define a cor do texto como branco */
+}
+
+/* Estilos para a seção principal do documento */
+main {
+    background-color: white; /* Define a cor de fundo da seção principal como branco */
+    padding: 10px; /* Adiciona preenchimento */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    width: 100%; /* Define a largura como 100% da largura do contêiner pai */
+    max-width: 300px; /* Define a largura máxima como 300 pixels */
+    min-height: 200px; /* Define a altura mínima como 200 pixels */
+    display: flex; /* Ativa o modelo de layout flexível */
+    align-items: center; /* Alinha os itens ao centro no eixo transversal (vertical) */
+    justify-content: center; /* Alinha os itens ao centro no eixo principal (horizontal) */
+}
+
+/* Estilos para a classe 'content' dentro da seção principal */
+.content {
+    display: flex; /* Ativa o modelo de layout flexível */
+    flex-direction: column; /* Organiza os elementos filhos em uma coluna */
+    width: 100%;
+    gap: 10px; /* Define o espaçamento entre os elementos filhos */
+}
+
+/* Estilos para o elemento com a classe 'spnQtd' dentro da classe 'content' */
+.spnQtd {
+    text-align: end; /* Alinha o texto à direita */
+}
+
+/* Estilos para a classe 'answers' dentro da classe 'content' */
+.answers {
+    display: flex; /* Ativa o modelo de layout flexível */
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Estilos para os botões dentro da classe 'answers' */
+button {
+    width: 100%;
+    text-align: start; /* Alinha o texto à esquerda */
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #008CCC; /* Define a cor de fundo do botão */
+    color: white; /* Define a cor do texto como branco */
+}
+
+/* Estilos para a classe 'finish' dentro da seção principal */
+.finish {
+    display: none; /* Inicialmente oculta a classe 'finish' */
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilos para os botões dentro da classe 'finish' */
+.finish button {
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilos adicionais para os botões com resposta correta e incorreta */
+.answer.correct {
+    background-color: #4CAF50; /* Cor verde para respostas corretas */
+}
+
+.answer.incorrect {
+    background-color: #FF5252; /* Cor vermelha para respostas incorretas */
+}
+
+.created{
+    align-items:flex-end
+}
